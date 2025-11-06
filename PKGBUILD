@@ -12,8 +12,8 @@ sha256sums=()
 package() {
     install -Dm755 "${startdir}/main.py" "$pkgdir/usr/lib/flatinstall/main.py"
     
-    install -Dm755 "${startdir}/flatinstall" "$pkgdir/usr/bin/flatinstall"y
-    
+    install -Dm755 "${startdir}/flatinstall" "$pkgdir/usr/bin/flatinstall"
+
     if [ -d "${startdir}/src" ] && [ "$(ls -A ${startdir}/src)" ]; then
         cp -r "${startdir}/src" "$pkgdir/usr/lib/flatinstall/"
     fi
