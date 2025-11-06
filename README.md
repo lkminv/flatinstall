@@ -52,10 +52,11 @@ flatinstall --help
 
 ## Usage
 ```bash
-flatinstall [options] 
+flatinstall
 ```
+Enter the name of app you want to install and it will do it for you!
 
-For detailed usage instructions, run:
+You can see the same information by running this:
 ```bash
 flatinstall --help
 ```
@@ -75,6 +76,12 @@ sudo pacman -Rs flatinstall
 ### Force removal (if there are issues):
 ```bash
 sudo pacman -Rdd flatinstall
+```
+
+### If its other distro:
+```bash
+rm /usr/lib/flatinstall/main.py
+rm /usr/bin/flatinstallha
 ```
 
 ## Troubleshooting
