@@ -1,2 +1,2 @@
 #!/bin/bash
-exec python3 /usr/share/flatinstall/main.py "$@"
+exec python3 /usr/lib/flatinstall/main.py "$@"
